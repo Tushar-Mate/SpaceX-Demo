@@ -30,8 +30,9 @@
     "@angular/router": "~9.1.4",
     "@nguniversal/express-engine": "^9.1.1",
     "bootstrap": "^4.5.3",
-    "express": "^4.15.2",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -46,6 +47,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "^5.1.2",
+    "enhanced-resolve": "^5.3.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
