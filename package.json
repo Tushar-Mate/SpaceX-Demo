@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -11,10 +11,17 @@
     "dev:ssr": "ng run spaceX:serve-ssr",
     "serve:ssr": "node dist/spaceX/server/main.js",
     "build:ssr": "ng build --prod && ng run spaceX:server:production",
-    "prerender": "ng run spaceX:prerender"
+    "prerender": "ng run spaceX:prerender",
+    "heroku-postbuild": "ng build --prod"
+  },
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.9.0"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~9.1.4",
+    "@angular/compiler-cli": "~9.1.4",
     "@angular-devkit/core": "^10.2.0",
     "@angular-devkit/schematics": "^10.2.0",
     "@angular/animations": "~9.1.4",
@@ -30,12 +37,12 @@
     "@angular/router": "~9.1.4",
     "@nguniversal/express-engine": "^9.1.1",
     "bootstrap": "^4.5.3",
-    "express": "^4.17.1",
+    "express": "^4.15.2",
     "jquery": "^3.5.1",
-    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~3.8.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.4",
@@ -47,7 +54,6 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "^5.1.2",
-    "enhanced-resolve": "^5.3.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
