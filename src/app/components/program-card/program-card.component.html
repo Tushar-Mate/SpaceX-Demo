@@ -1,0 +1,21 @@
+  <article class="card">
+    <img src="{{programObj.missionImg}}" alt="{{programObj.missionName}}">
+    <div class="text">
+      <span class="font-weight-bold text-color">{{programObj.missionName}} #{{programObj.flightNumber}}</span><br>
+      <span class="font-weight-bold">Mission Ids:</span>
+      <ul>
+        <li class="text-color" *ngFor="let id of programObj.missionIds">
+          {{id}}
+        </li>
+      </ul>  
+      <div class="row p-0 m-0">
+        <span class="font-weight-bold">Launch Year: </span><span class="text-color"> {{programObj.launchYear}}</span>
+      </div>
+      <div class="row p-0 m-0"> 
+      <span class="font-weight-bold">Successful Launch: </span><span class="text-color">{{programObj.successfulLaunch}}</span>
+      </div>
+      <div class="row p-0 m-0"> 
+      <span class="font-weight-bold">Successful Landing: </span><span class="text-color">{{programObj.successfulLand}}</span>
+      </div>
+    </div>
+  </article>

@@ -1,0 +1,14 @@
+<div class="card p-2">
+<span class="font-weight-bold">Filters</span>{{filterQueryObj.queryVal}}
+<div class="filters-container">
+  <div *ngFor="let filter of filtersData">
+    <div class="text-center">
+      <span>{{filter.filter_name}}</span>
+      <hr class="m-0">
+    </div>
+    <div class="filters-align">
+      <button class="filter-option" *ngFor="let optionObj of filter.filters"  (click)="onFilterClick(optionObj)" [ngClass]="{'highlight': highlightSelected(optionObj)}">{{optionObj.option}}</button>
+    </div>
+  </div>
+</div>
+</div>

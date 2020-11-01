@@ -1,0 +1,35 @@
+{
+  "data": [
+    {"filter_name":"Launch Year",
+      "filters":[
+                { "option" : "2006" , "text" : "launch_year" },
+                { "option" : "2007" , "text" : "launch_year"},
+                { "option" : "2008" , "text" : "launch_year"},
+                { "option" : "2009" , "text" : "launch_year"},
+                { "option" : "2010" , "text" : "launch_year"},
+                { "option" : "2011" , "text" : "launch_year"},
+                { "option" : "2012" , "text" : "launch_year"},
+                { "option" : "2013" , "text" : "launch_year"},
+                { "option" : "2014" , "text" : "launch_year"},
+                { "option" : "2015" , "text" : "launch_year"},
+                { "option" : "2016" , "text" : "launch_year"},
+                { "option" : "2017" , "text" : "launch_year"},
+                { "option" : "2018" , "text" : "launch_year"},
+                { "option" : "2019" , "text" : "launch_year"},
+                { "option" : "2020" , "text" : "launch_year"}
+                ]
+    },
+    {"filter_name":"Successful Launch",
+      "filters":[
+                { "option" : "true" , "text" : "launch_success"},
+                { "option" : "false", "text" : "launch_success" }
+                ]
+    },
+    {"filter_name":"Successful Landing",
+      "filters":[
+                { "option" : "true" , "text" : "land_success"},
+                { "option" : "false", "text" : "land_success" }
+                ]
+    }
+  ]
+}

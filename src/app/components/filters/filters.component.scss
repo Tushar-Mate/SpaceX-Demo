@@ -1,0 +1,31 @@
+.filters-align{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter-option{
+  background-color: #d0eca4;
+  width: 30%;
+    padding: 0.3rem;
+    margin: 0.4rem;
+    border: none;
+    border-radius: 15%;
+}
+.card{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.filters-container{
+  padding: 12px;
+}
+// button:focus{
+//   background-color: rgb(125, 197, 18);
+//   border: none;
+//   outline: none;
+// }
+.highlight{
+  background-color: rgb(125, 197, 18);
+  border: none;
+  outline: none;
+}
