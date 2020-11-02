@@ -7,7 +7,7 @@
       <hr class="m-0">
     </div>
     <div class="filters-align">
-      <button class="filter-option" *ngFor="let optionObj of filter.filters"  (click)="onFilterClick(optionObj)" [ngClass]="{'highlight': highlightSelected(optionObj)}">{{optionObj.option}}</button>
+      <button class="filter-option" *ngFor="let optionObj of filter.filters"  (click)="onFilterClick(optionObj)" [ngClass]="{'highlight': highlightSelected(optionObj)}">{{optionObj.option | titlecase}}</button>
     </div>
   </div>
 </div>
