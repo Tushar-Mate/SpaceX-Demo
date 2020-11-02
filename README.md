@@ -1,27 +1,38 @@
 # SpaceX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+This project is made in angular version 9.1.4. To implement responsive behaviour in project, used Bootstrap and Flex Layout.Used generic components and reuseable components.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Install [Node.js](https://nodejs.org) 
+2. Install Angular CLI by running the following command:
+  ```bash
+  npm i -g @angular/cli
+  ```
+3. From project root folder install all the dependencies by running the following command inside your terminal:
+  ```bash
+  npm install
+  ```
 
-## Code scaffolding
+## Run the app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+By running the following command a window will automatically open at [localhost:8080](http://localhost:8080). Angular and Express files are being watched. Any change automatically creates a new bundle, restart Express server and reload your browser.
 
-## Build
+```bash
+  npm start
+  ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Build the app
 
-## Running unit tests
+### Development mode
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  ng build
+  ```
 
-## Running end-to-end tests
+### Production mode
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+  ng build --prod
+  ```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
